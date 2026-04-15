@@ -1,0 +1,42 @@
+.container {
+  height: 600px;
+  display: flex;
+  background-color: aqua;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  margin: 5px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.box1 {
+  background-color: red;
+  background-image: url("./flower.jpg");
+  background-size: cover;
+  /* flex-grow: 2; */
+}
+
+.box2 {
+  background-color: green;
+  /* flex-grow: 1; */
+}
+
+.box3 {
+  background-color: blue;
+  /* order: -1; */
+  /* flex-grow: 3; */
+  /* align-self: flex-end; */
+  /* align-self: flex-start; */
+  flex: 2 2 200px;
+}
+
+.box4 {
+  background-color: orange;
+}
+@media screen {
+}

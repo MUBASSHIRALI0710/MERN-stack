@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn DSA Free</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <!-- heading -->
+    <h1 id="heading" style="text-align: center; background-color: coral;">Learn DSA Free From Coding Wisdom</h1>
+    <nav>
+      <ol>
+        <li><a href="#Introduction">C++ Introduction</a></li>
+        <li><a href="#compiler">C++ Compiler</a></li>
+        <li><a href="#array">Array</a></li>
+        <li><a href="">Tree</a></li>
+        <li><a href="">Graph</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="Introduction">
+      <h2>Introduction To C++</h2>
+      <p>C++ is a powerful, general-purpose programming language developed by Bjarne Stroustrup at Bell Labs in the
+        early 1980s. It originated as an extension of the C programming language, initially called "C with Classes," and
+        evolved to incorporate object-oriented programming (OOP) principles.</p>
+
+      <h2>Feature of C++</h2>
+      <ul>
+        <li><strong>Object-Oriented Programming (OOP):</strong> C++ fully supports OOP principles like classes, objects,
+          inheritance, polymorphism, encapsulation, and abstraction, enabling modular and reusable code design.</li>
+        <li><strong>Performance:</strong> It offers high performance due to its close-to-hardware capabilities,
+          including manual memory management and low-level control, making it suitable for resource-intensive
+          applications.</li>
+        <li><strong>Memory Management:</strong> C++ provides features like pointers and the new and delete operators for
+          explicit, dynamic memory allocation and deallocation, giving developers fine-grained control over memory
+          usage.</li>
+        <li><strong>Standard Template Library (STL):</strong> The STL offers a rich collection of pre-built data
+          structures (e.g., vectors, lists, maps) and algorithms (e.g., sorting, searching), significantly boosting
+          development efficiency and code quality.</li>
+        <li><strong>Multi-Paradigm Programming:</strong> C++ supports multiple programming paradigms, including
+          procedural, object-oriented, and generic programming (through templates), allowing developers to choose the
+          most appropriate style for different tasks.</li>
+        <li><strong>Compiler-Based:</strong> C++ is a compiled language, meaning the entire code is translated into
+          machine-executable code before execution, contributing to its speed.</li>
+      </ul>
+      <div>
+        <h3>Basic Syntax</h3>
+        <pre style="background-color: bisque;">
+      <code>
+        #include &ltiostream&gt
+        using namespace std;
+
+        int main() {
+          cout &lt&lt "Hello World!";
+          return 0;
+        }
+      </code>
+    </pre>
+        <ul>
+          <li><strong>Line 1:</strong> <code
+              style="color: red; background-color: beige;"> #include &ltiostream&gt</code> is a header file library that
+            lets us work with input and output objects, such as cout (used in line 5). Header files add functionality to
+            C++ programs.</li>
+          <li><strong>Line 2:</strong> <code
+              style="color: red; background-color: beige;"> using namespace std </code>means that we can use names for
+            objects and variables from the standard library.</li>
+          <li><strong>Line 3:</strong> A blank line. C++ ignores white space. But we use it to make the code more
+            readable.</li>
+          <li><strong>Line 4:</strong> Another thing that always appear in a C++ program is <code
+              style="color: red; background-color: beige;">int main()</code>. This is called a function. Any code inside
+            its curly brackets <code style="color: red; background-color: beige;">{}</code> will be executed.</li>
+          <li><strong>Line 5: </strong> <code style="color: red; background-color: beige;">cout</code> (pronounced
+            "see-out") is an object used together with the insertion operator (<code
+              style="color: red; background-color: beige;"><<</code>) to output/print text. In our example, it will
+            output "Hello World!".</li>
+        </ul>
+      </div>
+      <h2>Applications of C++</h2>
+      <ol>
+        <li><strong>Operating Systems:</strong> Major operating systems like Windows, macOS, and Linux utilize C++ in
+          their core components for efficiency and direct hardware interaction.</li>
+        <li><strong>Game Development:</strong> C++ is extensively used in game engines (e.g., Unreal Engine, Unity) and
+          for developing high-performance games due to its speed and control over resources.</li>
+        <li><strong>Web Browsers:</strong> The rendering engines of popular web browsers such as Chrome, Firefox, and
+          Safari are built with C++ to ensure fast and efficient page loading.</li>
+        <li><strong>Embedded Systems:</strong> Due to its lightweight nature and control over hardware, C++ is a
+          preferred language for programming embedded systems, including microcontrollers, IoT devices, and automotive
+          systems.</li>
+        <li><strong>Enterprise Software:</strong> Many large-scale enterprise applications and backend systems utilize
+          C++ for its robustness and performance.</li>
+      </ol>
+    </section>
+    <section id="compiler" style="padding: 155px;">
+      <h2>Online C++ Compiler</h2>
+      <iframe src="https://onecompiler.com/cpp" height="550" width="100%" frameborder="0"></iframe>
+    </section>
+
+    <section id="array" style="padding: 155px;">
+      <h2>Introduction to Arrays</h2>
+      <p>
+        Arrays in C++ are fundamental data structures used to store a collection of elements of the same data type in
+        contiguous memory locations. They provide a way to manage and organize multiple related values under a single
+        variable name, accessed via an index.
+      </p>
+      <table>
+        <tr>
+          <th><img src="array1.png" width="350" alt=""></th>
+          <th><img src="Arrays2.webp" width="300"></th>
+        </tr>
+      </table>
+      <h3>Characteristics of Arrays</h3>
+      <ul>
+        <li><b>Homogeneous elements: </b>All elements in an array must be of the same data type, such as all integers or
+          all strings. </li>
+        <li><b>Fixed size:</b> The number of elements in an array is set when it is created and cannot be changed during
+          program execution. </li>
+        <li><b>Contiguous memory allocation:</b> Elements are stored in adjacent memory locations, which enables
+          efficient access. </li>
+      </ul>
+      <h3>
+        Type of Arrays
+      </h3>
+      <ol>
+        <li><b>One-dimensional array:</b> A linear array where elements are stored sequentially and accessed using a
+          single subscript or index. </li>
+        <li><b>Multi-dimensional array:</b> An array of arrays, which can have multiple dimensions, such as a 2D array
+          (table) or a 3D array. </li>
+        <li><b>Dynamic array:</b> An array whose size can change during the execution of a program, as opposed to a
+          fixed-size array whose size is determined at compile time. </li>
+      </ol>
+      <h3>Tutorial for Array</h3>
+      <table>
+        <tr>
+          <th><iframe src="https://www.youtube.com/embed/moZNKL37w-s?si=jbCkgJG-mSYzC8LH" frameborder="0"></iframe></th>
+          <th><iframe src="https://www.youtube.com/embed/567332frcF0?si=-d5sKuk_rurT2BdY" frameborder="0"></iframe></th>
+          <th><iframe src=" https://www.youtube.com/embed/hUdqNPhXOh4?si=bTkZdAp5EUxOhIy_" frameborder="0"></iframe>
+          </th>
+        </tr>
+        <tr>
+          <th><iframe src="https://www.youtube.com/embed/9_B6TmAHveU?si=1I3hCDb3tDDFnxWs" frameborder="0"></iframe>
+          </th>
+          <th><iframe src="https://www.youtube.com/embed/YpZUgiT1N94?si=Gfg1VAC51YSzYzaA"" frameborder=" 0"></iframe>
+          </th>
+          <th><iframe src="https://www.youtube.com/embed/9_B6TmAHveU?si=4arHmB2ZJyNwbXnE" frameborder="0"></iframe>
+          </th>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <a href="#heading"><button style="background-color: chartreuse;">Back to Home</button></a>
+
+
+  <footer style="background-color: rgb(103, 103, 103);">
+    <p style="color: whitesmoke;">Copyright &copy; 2025 Your Coding Wisdom. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

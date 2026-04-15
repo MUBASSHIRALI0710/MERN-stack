@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: red;
+}
+.container {
+  height: 43vw;
+  width: 43vw;
+  background-color: #947e7e;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 0.669rem;
+}
+.black {
+  background-color: black;
+  /* height: 50px;
+  width: 50px; */
+}
+.white {
+  background-color: rgb(255, 255, 255);
+  /* height: 50px;
+  width: 50px; */
+}
+@media screen and (max-width: 600px) {
+  .container {
+    height: 43vh;
+    width: 43vh;
+  }
+}

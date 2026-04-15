@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* header */
+.navbar {
+  background-color: red;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navMenu {
+  display: flex;
+  align-items: flex-end;
+}
+.logo {
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  font-size: 0.8rem;
+  margin-left: 1.5rem;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+.navlink {
+  text-decoration: none;
+  color: aliceblue;
+}
+.search {
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+}
+.searchBar {
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 400px;
+  max-width: 60%;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+.searchBtn {
+  padding: 10px 10px;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: red;
+  border: none;
+}
+
+.hero {
+  padding: 1rem;
+  background-image: url(./hero.webp);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heroHeading {
+  font-size: 1.5rem;
+  background-color: #000000;
+  color: aliceblue;
+}
+.heroBtn {
+  font-size: 1rem;
+  padding: 5px 10px;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+}
+.mover {
+  text-align: center;
+  padding: 1rem;
+}
+.mover > h2 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: #000000;
+}

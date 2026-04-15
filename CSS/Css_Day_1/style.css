@@ -1,0 +1,18 @@
+*{
+  background-color: #e0cbb9;
+  color: #754b4d;
+  border:5px solid;
+  border-color: #4c6405;
+  padding: 10px;
+}
+.second,#main{
+  background-color: #cdd4b5;
+}
+ul>li{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p>strong{
+  color: #6b705c;
+  background-color: #ddbea9;
+  padding: none;
+}

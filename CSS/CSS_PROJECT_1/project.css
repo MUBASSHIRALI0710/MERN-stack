@@ -1,0 +1,30 @@
+.card {
+  border: 5px solid black;
+  width: 30vw;
+  height: 10vw;
+  margin: 20px 20px 20px 35vw;
+  padding: 10px;
+  background-color: #752e2e;
+  color: #db5959;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+h1 {
+  color: #000;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+.card:hover {
+  overflow-y: visible;
+  background-color: rgb(232, 176, 9);
+  height: 13vw;
+  scale: calc(1.2);
+  text-align: center;
+  padding-bottom: 15px;
+}

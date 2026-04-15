@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: wheat;
+  perspective: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: yellowgreen;
+  border: 2px solid black;
+  transition: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+}
+.box:hover {
+  transform: rotatez(45deg);
+}
+button {
+  padding: 10px 20px;
+  align-self: center;
+  justify-self: center;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-5px);
+}

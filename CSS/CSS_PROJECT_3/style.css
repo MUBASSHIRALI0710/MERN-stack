@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+}
+header {
+  position: fixed;
+  background-color: rgb(43, 139, 222);
+  width: 100vw;
+}
+ul {
+  height: 50px;
+}
+li {
+  display: inline;
+  background-color: chartreuse;
+  padding: 25px;
+  height: 50px;
+}
+p {
+  display: block;
+  padding-top: 55px;
+}
