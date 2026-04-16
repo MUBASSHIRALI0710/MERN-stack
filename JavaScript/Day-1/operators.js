@@ -23,3 +23,10 @@ console.log(increment)
 let decrement = 5;
 decrement--; // decrement = 5-1 = 4
 console.log(decrement)
+
+
+// Exponentiation
+let x=5;
+let y=3;
+let expo = x**y; // x^y Exponentiation
+console.log(expo)
