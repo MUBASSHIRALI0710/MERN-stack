@@ -1,3 +1,9 @@
+In JavaScript, **operators** are special symbols or keywords used to perform operations on operands (values or variables). They are the building blocks for expressions, assignments, comparisons, and logic.
+
+Here’s a structured overview of the main operator categories in JavaScript:
+
+---
+
 ## 1. Arithmetic Operators
 Perform mathematical calculations.
 
