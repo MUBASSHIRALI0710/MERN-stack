@@ -1,7 +1,3 @@
-Below is a **detailed, structured explanation** of the same topics with **clear reasoning, examples, and mental models** so you understand **how things actually work internally in JavaScript**.
-
----
-
 # 📘 JavaScript Objects – Detailed Notes (Basic → Advanced)
 
 ---
