@@ -286,5 +286,3 @@ Output
 
 > `for...in` iterates over object keys, while `for...of` iterates over values of iterable objects like arrays and strings.
 
----
-
