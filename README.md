@@ -19,7 +19,7 @@ MERN Stack – HTML/CSS ✅ | Git &amp; GitHub setup ✅ | JavaScript | React | 
 - [operator_in_JavaScript.md](./operator_in_JavaScript.md) – Complete guide to all operator types (arithmetic, assignment, logical, bitwise, ternary, etc.)
 
 ## 🎛️ Conditional Statements
-- [Conditional_Statement.md](.JavaScript\Day-9) – `if`, `else`, `else if`, nested conditions, switch, ternary operator, truthy/falsy
+- [Conditional_Statement.md](JavaScript/Day-9/Conditional_Statement.md) – `if`, `else`, `else if`, nested conditions, switch, ternary operator, truthy/falsy
 - [script.js](./script.js) – Live examples: voting age, nested if, ternary, switch case, falsy check
 
 ## 🔄 Loops
