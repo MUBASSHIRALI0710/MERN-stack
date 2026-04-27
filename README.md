@@ -9,18 +9,18 @@ MERN Stack – HTML/CSS ✅ | Git &amp; GitHub setup ✅ | JavaScript | React | 
 ---
 
 ## 📦 Data Types
-- [dataType.js](JavaScript/Day-3) – Number, Bigint, String, Boolean, Undefined, Null
-- [String.js](JavaScript/Day-3/String.js) – String methods, template literals, concatenation
-- [String.md](JavaScript/Day-3/String.md) – Quick revision notes for strings
+- [dataType.js](JavaScript/Day-03) – Number, Bigint, String, Boolean, Undefined, Null
+- [String.js](JavaScript/Day-03/String.js) – String methods, template literals, concatenation
+- [String.md](JavaScript/Day-03/String.md) – Quick revision notes for strings
 
 ## ⚙️ Operators
-- [operators.js](JavaScript/Day-2/operator_in_JavaScript.md) – Arithmetic operators (+, -, *, /, %, ++, --, **)
-- [Comparison_Operator.js](JavaScript/Day-2/Comparison_Operator.js) – `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`, plus edge cases (null, undefined, false)
-- [operator_in_JavaScript.md](JavaScript/Day-2/operator_in_JavaScript.md) – Complete guide to all operator types (arithmetic, assignment, logical, bitwise, ternary, etc.)
+- [operators.js](JavaScript/Day-02/operator_in_JavaScript.md) – Arithmetic operators (+, -, *, /, %, ++, --, **)
+- [Comparison_Operator.js](JavaScript/Day-02/Comparison_Operator.js) – `==`, `===`, `!=`, `!==`, `>`, `<`, `>=`, `<=`, plus edge cases (null, undefined, false)
+- [operator_in_JavaScript.md](JavaScript/Day-02/operator_in_JavaScript.md) – Complete guide to all operator types (arithmetic, assignment, logical, bitwise, ternary, etc.)
 
 ## 🎛️ Conditional Statements
-- [Conditional_Statement.md](JavaScript/Day-9/Conditional_Statement.md) – `if`, `else`, `else if`, nested conditions, switch, ternary operator, truthy/falsy
-- [script.js](JavaScript/Day-9/script.js) – Live examples: voting age, nested if, ternary, switch case, falsy check
+- [Conditional_Statement.md](JavaScript/Day-09/Conditional_Statement.md) – `if`, `else`, `else if`, nested conditions, switch, ternary operator, truthy/falsy
+- [script.js](JavaScript/Day-09/script.js) – Live examples: voting age, nested if, ternary, switch case, falsy check
 
 ## 🔄 Loops
 - [loop_javaScript.md](./loop_javaScript.md) – `for`, nested `for`, `while`, `do...while`, `forEach`, `break`, `continue`, real‑world use
