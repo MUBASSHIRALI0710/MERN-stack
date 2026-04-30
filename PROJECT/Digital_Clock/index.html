@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clock</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      width: 100vw;
+      background-color: #000000;
+      color: rgb(255, 255, 255);
+      font-size: large;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1 id="root">Clock</h1>
+  </div>
+
+</body>
+<script>
+  let clock = function () {
+    const time = document.getElementById('root')
+    const IndianTime = new Date().toLocaleTimeString('en-us', {
+      hour: 'numeric',
+      minute: '2-digit',
+      second: 'numeric',
+      hour12: true
+    });
+    time.innerHTML = IndianTime
+  }
+  setInterval(clock, 1000)
+
+  const time = document.getElementById('root');
+  time.style.fontSize = "12rem";
+  time.style.display = "flex";
+  time.style.height = "100vh";
+  time.style.width = "100vw"
+  time.style.justifyContent = "center";
+  time.style.alignItems = "center";
+
+</script>
+
+</html>
