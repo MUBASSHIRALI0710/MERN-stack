@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  margin-inline: 0;
+  margin-block: 0;
+}
+body{
+  color: white;
+  background: linear-gradient(35deg, #000000,#000000, #91073c, #067197, #058668 );
+  background-size: 400% 400%;
+  animation: gradientBG 8s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.heading{
+  padding: 3em;
+}
+
+#tophead{
+  font-weight: bolder;
+  font-family: monospace;
+  font-size: 4em;
+}
+
+.date_location{
+  font-weight: lighter;
+}
+#count {
+  margin-top: 150px; 
+  margin-left: 75px; 
+  box-sizing: border-box
+  
+}
+#day {
+  font-size: 50px; 
+  display: inline;
+  }
+
+.timeBox{
+  margin-top: 20px;
+  height: 90px;
+  width: 70px;
+  /* display: grid;
+  place-items: center; */
+  background: #00000039;
+  text-align: center;
+  padding: auto;
+  border-radius: 20%;
+ 
+}
