@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe game</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="main-div">
+    <!-- left side -->
+    <div id="leftside">
+      <p class="playerName">player 1</p>
+      <!-- <img src="./image11.png" height="400px" alt=""> -->
+    </div>
+<!-- main content -->
+    <div class="container">
+      <h1>TIC TAC TOE</h1>
+      <div id="board">
+        <div id="0" class="cell"></div>
+        <div id="1" class="cell"></div>
+        <div id="2" class="cell"></div>
+        <div id="3" class="cell"></div>
+        <div id="4" class="cell"></div>
+        <div id="5" class="cell"></div>
+        <div id="6" class="cell"></div>
+        <div id="7" class="cell"></div>
+        <div id="8" class="cell"></div>
+      </div>
+      <p class="winner-message" id="winnerMessage">Let's play</p>
+      <div class="Btn">
+        <button type="reset" id="clear-Btn">Play Again</button>
+        <!-- <button ></button> -->
+        <button type="button" id="refresh-Btn" onclick="window.location.reload();">New Game</button>
+
+      </div>
+    </div>
+<!-- right side -->
+    <div id="rightside">
+      <p class="playerName">player 2</p>
+      <!-- <img src="./image.png" height="400px" alt=""> -->
+    </div>
+  </div>
+<h1 id="winnerMessage"></h1>
+<!-- <img id="winnerGif" src='./gif.gif'> -->
+</body>
+<script src="./app.js"></script>
+
+</html>
