@@ -30,6 +30,9 @@ const game_tic_tac = (event) => {
       turn = "X";
       boardArray[element.id] = 'O';
       element.style.backgroundColor = 'red';
+      // const player2Img = document.getElementsByClassName('player2Img');
+      // player2Img.style.transition = "transform 0.3s ease";
+      
       if (CheckWinner()) {
         document.getElementById('winnerMessage').innerHTML = "Winner is O"
         // remove event listener
@@ -62,7 +65,7 @@ const game_tic_tac = (event) => {
 }
 
 // ***********************************************************
-const boardArray = new Array(9).fill("E");
+let boardArray = new Array(9).fill("E");
 
 const board = document.getElementById('board');
 const cell = document.getElementsByClassName('cell');
@@ -72,23 +75,22 @@ board.addEventListener('click', game_tic_tac);
 
 // playAgain button
 const clear = document.getElementById('clear-Btn');
-clear.addEventListener('click', (event) => 
-  {
+clear.addEventListener('click', (event) => {
   const cell = document.getElementsByClassName('cell');
   Array.from(cell).forEach((value) => {
     value.innerHTML = "";
-    value.style.backgroundColor = '';
-    value.style.color = '';
+    value.style = '';
+    
   })
 
   document.getElementById('winnerMessage').innerHTML = "Let's play";
   boardArray = new Array(9).fill("E");
   total_turn = 0;
-  (turn === "O") ? "O" : "X"; 
-  
-// Initial setup
-const board = document.getElementById('board');
-board.addEventListener('click', game_tic_tac);
+  turn = (turn === "O") ? "X" : "O";
+
+  // Initial setup
+  const board = document.getElementById('board');
+  board.addEventListener('click', game_tic_tac);
 })
 //new game
 // const newgame = document.getElementById('refresh-Btn');
