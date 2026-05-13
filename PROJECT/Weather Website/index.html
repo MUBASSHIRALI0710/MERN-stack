@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page{
+            width: 60vw;
+            height: 100vh;
+            background-color: yellowgreen;     
+            display: flex;
+            align-items: center;
+            justify-content: center;  
+            flex-direction: column; 
+        }
+        input,
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .weather-card {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #f0f0f0;
+            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <h1>🌤️ Real Weather</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button id="searchBtn">Get Weather</button>
+    <div id="weatherResult"></div>
+    </div>
+
+    <script>
+        // script.js
+        const apiKey = "270514ea7175e1749c4fc78a367e9a0e";
+
+        document.getElementById("searchBtn").addEventListener("click", () => {
+            const city = document.getElementById("cityInput").value.trim();
+            if (!city) return;
+
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+            // Promise ke saath fetch
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("City not found or API error");
+                    }
+                    return response.json();   // .json() bhi promise return karta hai
+                })
+                .then(data => {
+                    displayWeather(data);
+                })
+                .catch(error => {
+                    showError(error.message);
+                });
+        });
+
+        function displayWeather(data) {
+            const temp = data.main.temp;
+            const humidity = data.main.humidity;
+            const description = data.weather[0].description;
+            const icon = data.weather[0].icon;
+            const cityName = data.name;
+
+            const html = `
+        <div class="weather-card">
+            <h2>${cityName}</h2>
+            <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="icon">
+            <p>🌡️ Temperature: ${temp}°C</p>
+            <p>💧 Humidity: ${humidity}%</p>
+            <p>☁️ ${description}</p>
+        </div>
+    `;
+            document.getElementById("weatherResult").innerHTML = html;
+        }
+
+        function showError(msg) {
+            document.getElementById("weatherResult").innerHTML = `<p class="error">❌ ${msg}</p>`;
+        }
+    </script>
+</body>
+
+</html>
